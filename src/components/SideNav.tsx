@@ -1,14 +1,20 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Navigation() {
+import cushonLogo from '@/../public/cushon-logo-sm.png';
+
+export default function Page() {
 	return (
-		<ul>
-			<li>
-				<Link href="/">Home</Link>
-			</li>
-			<li>
-				<Link href="/isa">Investments</Link>
-			</li>
-		</ul>
+		<div>
+			<Image src={cushonLogo} height="60" width="250" alt="The Wild Oasis logo" quality={100} />
+			<ul>
+				<li>
+					<Link href="/">Home</Link>
+				</li>
+				<li>
+					<Link href="/isa">Investments</Link>
+				</li>
+			</ul>
+		</div>
 	);
 }
