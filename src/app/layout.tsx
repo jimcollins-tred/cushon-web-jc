@@ -1,17 +1,13 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 
 import '@/styles/globals.css';
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin'],
-});
+import { Open_Sans } from 'next/font/google';
 
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
+const openSans = Open_Sans({
 	subsets: ['latin'],
+	display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -26,8 +22,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}>
-				<main className="max-w-7xl  mx-auto w-full">{children}</main>
+			<body className={`${openSans.className} antialiased min-h-screen flex flex-col`}>
+				<div className="flex flex-1">
+					<main className="mx-auto w-full">{children}</main>
+				</div>
 			</body>
 		</html>
 	);
