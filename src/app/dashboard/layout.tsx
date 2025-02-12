@@ -7,9 +7,9 @@ export default function Layout({
 	children: ReactNode;
 }>) {
 	return (
-		<div className="grid grid-cols-[16rem_1fr]">
+		<div className="grid grid-cols-[16rem_1fr] h-full gap-14">
 			<SideNav />
-			<div className="py-1">{children}</div>
+			<div className="px-6 py-7">{children}</div>
 		</div>
 	);
 }
