@@ -1,0 +1,79 @@
+{
+	"funds": [
+		{
+			"name": "Cushon Equities Fund",
+			"description": "The Cushon Equities Fund spreads your money across a specially selected range of top-rated equities",
+			"charges": 0.6,
+			"projectedReturns": {
+				"likely": 5.57,
+				"good": 10.25,
+				"bad": 0.9
+			},
+			"projectedValue": {
+				"likely": 6936,
+				"good": 7871,
+				"bad": 6139
+			}
+		},
+		{
+			"name": "Fidelity Multi Asset Allocator Growth W Acc Discounted ISA",
+			"description": "The Fund aims to increase the value of your investment over a period of 5 years or more through a portfolio providing global exposure to both lower and higher risk assets.",
+			"charges": 0.6,
+			"projectedReturns": {
+				"likely": 5.32,
+				"good": 10.7,
+				"bad": -0.06
+			},
+			"projectedValue": {
+				"likely": 6889,
+				"good": 7969,
+				"bad": 5991
+			}
+		},
+		{
+			"name": "VT AJ Bell Balanced I Acc Discounted ISA",
+			"description": "The investment objective of VT AJ Bell Balanced is to achieve long-term capital growth with a balanced approach between defensive assets such as cash, fixed interest securities, money-market funds and collective investment schemes following alternative strategies such as property and commodities, and higher risk assets such as equities.",
+			"charges": 0.71,
+			"projectedReturns": {
+				"likely": 5.25,
+				"good": 10.83,
+				"bad": -0.33
+			},
+			"projectedValue": {
+				"likely": 6876,
+				"good": 7969,
+				"bad": 5991
+			}
+		},
+		{
+			"name": "CT Universal MAP Balanced C Acc Discounted ISA",
+			"description": "The Fund seeks to provide long term growth (combining capital and income) consistent with a balanced volatility level over the long term.",
+			"charges": 0.69,
+			"projectedReturns": {
+				"likely": 5.24,
+				"good": 10.61,
+				"bad": -0.14
+			},
+			"projectedValue": {
+				"likely": 6874,
+				"good": 7951,
+				"bad": 5978
+			}
+		},
+		{
+			"name": "Vanguard LifeStrategy 60% Equity A Shares Acc Discounted ISA",
+			"description": "The Fund seeks to achieve income and/or capital returns through a portfolio comprising approximately 60% stocks and 40% bonds.",
+			"charges": 0.62,
+			"projectedReturns": {
+				"likely": 5.23,
+				"good": 10.42,
+				"bad": 0.04
+			},
+			"projectedValue": {
+				"likely": 6872,
+				"good": 7907,
+				"bad": 6007
+			}
+		}
+	]
+}

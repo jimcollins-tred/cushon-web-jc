@@ -1,0 +1,23 @@
+{
+	"name": "James' Cushon ISA",
+	"balance": 10548,
+	"type": "INVESTMENT",
+	"funds": [
+		{
+			"name": "Cushon Equities Fund",
+			"description": "The Cushon Equities Fund spreads your money across a specially selected range of top-rated equities",
+			"percentage": 100,
+			"charges": 0.6,
+			"projectedReturns": {
+				"likely": 5.57,
+				"good": 10.25,
+				"bad": 0.9
+			},
+			"projectedValue": {
+				"likely": 6936,
+				"good": 7871,
+				"bad": 6139
+			}
+		}
+	]
+}
