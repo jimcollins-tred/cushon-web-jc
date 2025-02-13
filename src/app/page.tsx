@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 import cushonLogoWhite from '@/../public/nw_cushon_white.png';
 import homeImage from '@/../public/1721060098-new-home-ensamble.svg';
+import LinkButton from '@/components/Button';
 
 export default function Page() {
 	return (
@@ -13,12 +13,7 @@ export default function Page() {
 					Making pensions and savings easy
 				</h1>
 
-				<Link
-					href="/dashboard"
-					className="border-2 border-white rounded-full px-6 py-4 text-primary-800 text-lg text-white font-semibold hover:border-2 hover:bg-white hover:bg-opacity-10 transition-all my-4"
-				>
-					Personal ISAs
-				</Link>
+				<LinkButton href="/dashboard" text="Personal ISAs" />
 
 				<Image
 					src={homeImage}

@@ -8,10 +8,13 @@ export interface SideNavItemProps {
 
 function SideNavItem({ name, href, Icon }: SideNavItemProps) {
 	return (
-		<div className="flex items-center gap-4">
+		<Link
+			href={href}
+			className="flex items-center gap-4 hover:bg-white hover:bg-opacity-10 px-2 py-2 border-rd rounded-md"
+		>
 			<Icon className="w-5 h-5" />
-			<Link href={href}>{name}</Link>
-		</div>
+			<p>{name}</p>
+		</Link>
 	);
 }
 
