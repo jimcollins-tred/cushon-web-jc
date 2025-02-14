@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import cushonLogoWhite from '@/../public/nw_cushon_white.png';
 import homeImage from '@/../public/1721060098-new-home-ensamble.svg';
-import LinkButton from '@/components/Button';
+import LinkButton, { LinkButtonType } from '@/components/LinkButton';
 
 export default function Page() {
 	return (
@@ -13,7 +13,9 @@ export default function Page() {
 					Making pensions and savings easy
 				</h1>
 
-				<LinkButton href="/dashboard" text="Personal ISAs" />
+				<LinkButton href="/dashboard" type={LinkButtonType.WHITE}>
+					Personal ISAs
+				</LinkButton>
 
 				<Image
 					src={homeImage}
