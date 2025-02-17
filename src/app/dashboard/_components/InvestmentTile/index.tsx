@@ -4,20 +4,17 @@ import Tile from '@/components/Tile';
 import LinkButton, { LinkButtonType } from '@/components/LinkButton';
 
 import { getUserIsas } from '@/api/isa/getUserIsas';
+import { Isa } from '@/types/isa';
 
 interface InvestmentTileProps {
 	userId: number;
 }
 
-function generateIsaRow(isa) {
-	console.log('isa', isa);
-
-	const { name, isas_funds, balance, isa_return: isaReturn } = isa;
+function generateIsaRow(isa: Isa) {
+	const { name, isas_funds: funds, balance, isa_return: isaReturn } = isa;
 
 	// TODO: Assume one fund for now. Multiple funds to come
-	const fund = isas_funds[0].funds;
-
-	console.log('fund', fund);
+	const fund = funds[0];
 
 	const { name: fundName } = fund;
 
@@ -35,8 +32,6 @@ function generateIsaRow(isa) {
 async function InvestmentTile({ userId }: InvestmentTileProps) {
 	const userIsas = await getUserIsas(userId);
 
-	console.log('userIsas', userIsas);
-
 	return (
 		<Tile title="Current investments">
 			<h3 className="text-xl font-semibold text-primary">ISAs</h3>
@@ -53,7 +48,7 @@ async function InvestmentTile({ userId }: InvestmentTileProps) {
 			</table>
 
 			<div className="flex justify-end">
-				<LinkButton href="/dashboard/isa/new" type={LinkButtonType.PRIMARY}>
+				<LinkButton href="/dashboard/isa/funds" type={LinkButtonType.PRIMARY}>
 					Add a new ISA
 				</LinkButton>
 			</div>

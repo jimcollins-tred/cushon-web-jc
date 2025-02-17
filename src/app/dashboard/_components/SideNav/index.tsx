@@ -20,7 +20,7 @@ const navItems: SideNavItemProps[] = [
 
 export default function Page() {
 	return (
-		<nav className="bg-primary px-6 py-7 flex flex-col">
+		<nav className="bg-primary px-6 py-7 flex flex-col sticky top-0 h-screen">
 			<Image
 				src={cushonLogoColour}
 				layout="responsive"

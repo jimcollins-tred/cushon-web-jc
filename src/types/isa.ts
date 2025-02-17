@@ -7,7 +7,7 @@ export interface IsaFund extends Fund {
 export interface Isa {
 	name: string;
 	balance: number;
-	return: number;
+	isa_return: number;
 	type: string;
-	funds: IsaFund[];
+	isas_funds: IsaFund[];
 }

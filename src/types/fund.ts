@@ -10,4 +10,5 @@ export interface Fund {
 	charges: number;
 	projectedReturns: Projection;
 	projectedValue: Projection;
+	provider: string;
 }

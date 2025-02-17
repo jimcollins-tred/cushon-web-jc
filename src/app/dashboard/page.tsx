@@ -3,7 +3,6 @@ import InvestmentTile from './_components/InvestmentTile';
 import SecondaryHeader from '@/components/SecondaryHeader';
 
 import { getUser } from '@/api/isa/getUser';
-import { getUserIsas } from '@/api/isa/getUserIsas';
 
 export default async function Page() {
 	const user = await getUser();
